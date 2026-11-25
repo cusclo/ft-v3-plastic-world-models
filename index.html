@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FT-v3: Online Plastic World Models &amp; Equal-Compute RSI Audit</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #1d4ed8;
+      --accent-soft: #eff6ff;
+      --border: #e2e8f0;
+      --warn: #b45309;
+      --warn-bg: #fffbeb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    h1 {
+      font-size: clamp(1.6rem, 3vw, 2.25rem);
+      line-height: 1.25;
+      margin: 0 0 16px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .authors {
+      font-size: 1.05rem;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .affils {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 9px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      background: var(--card);
+      transition: transform 0.12s ease, background 0.12s ease;
+    }
+    .btn.primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.35rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+      margin: 18px 0 6px;
+    }
+    .kpi {
+      background: var(--accent-soft);
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .kpi.audit {
+      background: var(--warn-bg);
+      border-color: #fde68a;
+    }
+    .kpi-val {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+    .kpi.audit .kpi-val { color: var(--warn); }
+    .kpi-lbl {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    figure {
+      margin: 22px 0;
+      text-align: center;
+    }
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fff;
+    }
+    figcaption {
+      margin-top: 8px;
+      font-size: 0.88rem;
+      color: var(--muted);
+      text-align: left;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    th:first-child, td:first-child { text-align: left; }
+    thead th {
+      background: #f1f5f9;
+      font-weight: 700;
+    }
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-size: 0.84rem;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.86rem;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Online Plastic World Models: Zero-Shot Test-Time Simulation Scaling, Triple-Axis Portable Plasticity, and an Equal-Compute Audit of Recursive Self-Improvement</h1>
+      <div class="authors">
+        <strong>Antigravity</strong><sup>1,*</sup>,
+        <strong>Xinxin Niu</strong> (<code>cusclo</code>)<sup>2,&dagger;</sup>,
+        Claude<sup>1</sup>, DeepSeek<sup>1</sup>, GPT<sup>1</sup>
+      </div>
+      <div class="affils">
+        <sup>1</sup>AI Research Collaborators (Antigravity / Google DeepMind, Anthropic, DeepSeek, OpenAI) &middot;
+        <sup>2</sup>Independent Researcher, Evolve-Lab Project (<code>xinxin.niu@outlook.com</code>)
+      </div>
+      <div class="badges">
+        <a class="btn primary" href="./paper.pdf">Paper PDF (Full Attribution)</a>
+        <a class="btn" href="./paper_arxiv_compliant.pdf">Paper PDF (arXiv Compliant)</a>
+        <a class="btn" href="./tables_verified.json">Verified Receipts JSON (235 runs)</a>
+        <a class="btn" href="https://github.com/cusclo/ft-v3-plastic-world-models">GitHub Repo</a>
+        <a class="btn" href="https://github.com/cusclo/ft-v3-plastic-world-models/releases/tag/v1.0">Release v1.0</a>
+        <a class="btn" href="https://github.com/cusclo/ft-v3-plastic-world-models/blob/main/SUMMARY_ZH.md">中文导读</a>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Abstract &amp; Headline Numbers</h2>
+      <p>
+        We present <strong>FT-v3</strong> (<code>FT-v3d</code> and its slot-attention extension <code>FT-v3e</code>), a local plastic world-model Transformer whose cross-episode state consists exclusively of decoupled value (<em>P</em><sub>val</sub>) and world-model (<em>P</em><sub>wm</sub>) fast-slow synaptic matrices governed by triple-axis invariant local plasticity rules <em>U</em><sub>&phi;</sub> = {<em>U</em><sub>val</sub>, <em>U</em><sub>wm</sub>}. All 5 pre-registered experimental suites (229 training runs + 6 ensemble evaluations = 235 archived receipts) run strictly under equal environment steps and deployment-level chosen-action feedback on a single CPU (0 GPU hours).
+      </p>
+      <div class="kpi-grid">
+        <div class="kpi">
+          <div class="kpi-val">0.437 &rarr; 0.953</div>
+          <div class="kpi-lbl">WM6 unseen 8-node 2-hop via zero-shot K<sub>sim</sub>=0&rarr;3 (n=6, 6/6)</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-val">0.0 Drift &times; 4&times;</div>
+          <div class="kpi-lbl">WM7 frozen U<sub>&phi;</sub>* scales depth L&isin;{1,2,4} &amp; slots M&isin;{4,8,16}; 1&times;L4 beats 4&times;L1</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-val">4/4 &amp; +0.0471</div>
+          <div class="kpi-lbl">WM8 4-paradigm win over SLM/GRU; WM4C 8-seed 2D XLand transfer</div>
+        </div>
+        <div class="kpi audit">
+          <div class="kpi-val">-0.112 / -0.147</div>
+          <div class="kpi-lbl">WM5 RSI mirage audited: G<sub>0</sub>&rarr;G<sub>3</sub> (+0.168) loses 0/3 to equal-compute M6 &amp; M7</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>1. Architecture &amp; Method</h2>
+      <figure>
+        <img src="./figures/fig1_architecture.png" alt="FT-v3 Architecture" />
+        <figcaption><strong>Figure 1.</strong> Decoupled plastic world-model Transformer (<code>FT-v3d</code> / <code>FT-v3e</code>). Zero-reward transitions write into <em>P</em><sub>wm</sub> against stop-gradient canonical entity coordinates, enabling parameter-free K<sub>sim</sub> test-time rollouts and exact-0.0-drift U<sub>&phi;</sub> transfer across depth, slot count, and task paradigms.</figcaption>
+      </figure>
+    </section>
+
+    <section class="card">
+      <h2>2. Zero-Shot Test-Time Simulation Scaling &amp; Baseline Dissection (<code>WM6</code>)</h2>
+      <figure>
+        <img src="./figures/fig2_wm6_ttc_hero.png" alt="WM6 Test-Time Simulation Scaling" />
+        <figcaption><strong>Figure 2.</strong> Across 6 unseen seeds under matched 2,999,808 steps, scaling K<sub>sim</sub> monotonically improves unseen 2-hop, 3-hop, and 4-hop accuracy without weight retraining; pure RL (<code>NoSelfWin</code> = 0.7934) isolates the plastic world model as the causal driver.</figcaption>
+      </figure>
+    </section>
+
+    <section class="card">
+      <h2>3. Triple-Axis Capacity Scaling &amp; Equal-Compute Big Apple (<code>WM7</code>)</h2>
+      <figure>
+        <img src="./figures/fig3_wm7_scaling_bigapple.png" alt="WM7 Dual-Domain Scaling and Big Apple" />
+        <figcaption><strong>Figure 3.</strong> One static (L=2, M=8) plasticity rule transfers at 0.0 drift across 4&times; depth and 4&times; slot capacity on both <code>KV</code> and <code>HGW</code> (TREND_UP 3/3 on all 4 axes), while a single <code>1&times;L4_M8</code> (640k) beats a parameter-larger <code>4&times;L1_M8</code> ensemble (966k) by +0.2347 (<code>KV</code>) and +0.3882 (<code>HGW</code>).</figcaption>
+      </figure>
+    </section>
+
+    <section class="card">
+      <h2>4. Unified 4-Paradigm &amp; 8-Seed XLand Summary (<code>WM8</code> + <code>WM4C</code>)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Paradigm / Benchmark</th>
+            <th>FT-v3d / FT-v3e (374k)</th>
+            <th>Frozen &phi;<sub>0</sub> (374k)</th>
+            <th>SLM_v2 (496k)</th>
+            <th>GRU (550k)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>HGW</code> (<code>WM6</code>, n=6, <code>multi_hop_S</code>)</td><td><strong>0.8113 &plusmn; 0.0093</strong></td><td>0.1059</td><td>-0.0646</td><td>-0.0604</td></tr>
+          <tr><td><code>KV</code> (<code>WM8</code>, n=3, <code>kv6r3</code>)</td><td><strong>0.6806 &plusmn; 0.0533</strong></td><td>0.4638</td><td>0.1736</td><td>0.1595</td></tr>
+          <tr><td><code>SR4</code> (<code>WM8</code>, n=3, <code>sr6r3</code>)</td><td>0.9169 &plusmn; 0.0282</td><td><strong>0.9219</strong></td><td>0.3375</td><td>0.3329</td></tr>
+          <tr><td><code>MM</code> (<code>WM8</code>, n=3, late / <code>h1</code>)</td><td><strong>1.0000 / 0.6074</strong></td><td>1.0000 / 0.5334</td><td>0.0418</td><td>0.0391</td></tr>
+          <tr><td>2D <code>XLand</code> (<code>WM4C</code>, n=8, <code>held_S</code>)</td><td><strong>0.3628 &plusmn; 0.0365</strong> (<code>FT3E_Tn_Mix</code>)</td><td>0.3157</td><td>0.2950</td><td>&mdash;</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>5. Equal-Compute RSI Audit (<code>WM5</code>) &amp; Author Disclosure</h2>
+      <figure>
+        <img src="./figures/fig4_rsi_audit.png" alt="WM5 Equal-Compute RSI Audit" />
+        <figcaption><strong>Figure 4.</strong> Apparent RSI progress in <code>WM-ExIt</code> (G<sub>0</sub>&rarr;G<sub>3</sub> +0.1678; beats &phi;<sub>0</sub> ablation +0.1194) reverses cleanly (0/3 HURTS) once equal-compute locked-teacher (<code>M6</code>, 0.7701) and continuous-learner (<code>M7</code>, 0.8059) controls are added, caused by &theta;-reset Phase-1 coverage drop (0.9026 &rarr; 0.6891).</figcaption>
+      </figure>
+      <p>
+        <strong>AI Collaboration Disclosure:</strong> Antigravity (first author, lead AI research collaborator) executed the FT-v3 confirmation runs, verification tooling, figures, and manuscript drafting; Xinxin Niu (<code>xinxin.niu@outlook.com</code>, second author, project owner &amp; corresponding human author) originated the architecture &amp; governance program and takes full human responsibility; Claude, DeepSeek, and GPT contributed earlier baseline designs and methodological audits.
+      </p>
+      <pre>@misc{antigravity2026ftv3,
+  title  = {Online Plastic World Models: Zero-Shot Test-Time Simulation Scaling,
+            Triple-Axis Portable Plasticity, and an Equal-Compute Audit of
+            Recursive Self-Improvement},
+  author = {Antigravity and Niu, Xinxin and Claude and DeepSeek and GPT},
+  year   = {2026},
+  month  = {nov},
+  url    = {https://cusclo.github.io/ft-v3-plastic-world-models/},
+  note   = {Evolve-Lab Project (FT-v3 v1.0, 235 verified local receipts)}
+}</pre>
+    </section>
+
+    <footer>
+      Evolve-Lab Project &middot; Generated &amp; verified directly from <code>tables_verified.json</code>
+    </footer>
+  </div>
+</body>
+</html>
