@@ -8,6 +8,7 @@
 
 ## Links & Artifacts
 
+- **Zenodo Permanent DOI (Preprint v1):** https://doi.org/10.5281/zenodo.24538002 (`https://zenodo.org/records/24538002` | Concept DOI `10.5281/zenodo.24538001`)
 - **Project Page (GitHub Pages):** https://cusclo.github.io/ft-v3-plastic-world-models/
 - **Release `v1.0` (Compiled PDFs, LaTeX Source Tarballs, Verified Receipts):** https://github.com/cusclo/ft-v3-plastic-world-models/releases/tag/v1.0
 - **Paper PDF (Full Attribution):** [`paper.pdf`](paper.pdf)
@@ -35,8 +36,9 @@
   author = {Antigravity and Niu, Xinxin and Claude and DeepSeek and GPT},
   year   = {2026},
   month  = {nov},
+  doi    = {10.5281/zenodo.24538002},
   url    = {https://cusclo.github.io/ft-v3-plastic-world-models/},
-  note   = {Evolve-Lab Project (FT-v3 v1.0, 235 verified local receipts)}
+  note   = {Zenodo Preprint v1 (Concept DOI 10.5281/zenodo.24538001), 235 verified local receipts}
 }
 ```
 
